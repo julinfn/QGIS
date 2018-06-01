@@ -1,0 +1,5 @@
+1.将OSGEO4w_ROOT/apps/qt5/bin里的dll全部拷贝到qgis.exe同级目录
+2.将OSGEO4W_ROOT/bin里的dll全部拷贝到qgis.exe同级目录
+3.将build/output/plugins/RelWithDebInfo中的dll复制出来，在qgis.exe同级目录新建一个文件夹“plugins”，把复制的dll放在该目录。
+4.把OSGEO4w_ROOT/apps/qt5/plugins整体拷贝到qgis.exe同级目录，名称改为qtplugins
+5.把OSGEO4w_ROOT/apps/qt5/plugins/platform整体拷贝到qgis.exe同级目录。

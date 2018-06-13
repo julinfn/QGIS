@@ -1,0 +1,10 @@
+新建目录，里面包含doc、lib、include、bin、src几个目录
+lib：将D:\qgis\install\OSGeo4W64\lib中的.lib文件和D:\qgis\install\OSGeo4W64\apps\Qt5\lib中的lib文件拷贝到lib目录
+include：osgeo4w： D:\qgis\install\OSGeo4W64\include
+         qt：D:\qgis\install\OSGeo4W64\apps\Qt5\include
+         core：D:\qgis\src\QGIS-final-3_0_2\src\core  D:\qgis\src\QGIS-final-3_0_2\build2\src\core\qgis_core.h D:\qgis\src\QGIS-final-3_0_2\build2\src\core\qgssqlstatementparser.hpp D:\qgis\src\QGIS-final-3_0_2\build2\src\core\qgsexpressionparser.hpp
+         gui:D:\qgis\src\QGIS-final-3_0_2\src\gui D:\qgis\src\QGIS-final-3_0_2\build2\src\gui\qgis_gui.h
+         analysis:D:\qgis\src\QGIS-final-3_0_2\src\analysis  D:\qgis\src\QGIS-final-3_0_2\build2\src\analysis\qgis_analysis.h  D:\qgis\src\QGIS-final-3_0_2\build2\src\analysis\qgsrastercalcparser.hpp
+         native: D:\qgis\src\QGIS-final-3_0_2\src\native   D:\qgis\src\QGIS-final-3_0_2\build2\src\native\qgis_native.h
+         extenal:D:\qgis\src\QGIS-final-3_0_2\external
+         app:D:\qgis\src\QGIS-final-3_0_2\src\app D:\qgis\src\QGIS-final-3_0_2\build2\src\app\qgis_app.h

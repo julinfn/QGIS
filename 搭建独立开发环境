@@ -13,3 +13,17 @@ include：osgeo4w： D:\qgis\install\OSGeo4W64\include
        qgis_native: D:\qgis\src\QGIS-final-3_0_2\src\native
        qgis_core: D:\qgis\src\QGIS-final-3_0_2\src\core  D:\qgis\src\QGIS-final-3_0_2\build2\src\core\qgssqlstatementparser.cpp & qgsexpressionparser.cpp  & qgsexpression_texts.cpp & flex_qgssqlstatementlexer.cpp & flex_qgsexpressionlexer.cpp  
                 在csxproj文件中批量修改头文件和源文件的路径，在解决方案中添加该工程，把头文件拖到“head files”里，把工程包含目录、依赖库目录、依赖输入项的路径修改为真实路径。编译，出错了则添加相应的头文件依赖
+                细节：1）拷贝cscproj文件时同时拷贝.filters文件，其中包含了工程中目录组织方式。
+                     2）同时将D:\qgis\src\QGIS-final-3_0_2\build2\src\core及其子目录中的moc_*.cpp文件拷贝到GeneratedFiels目录中，并修改相对路径。
+       qgis_gui: D:\qgis\src\QGIS-final-3_0_2\src\gui D:\qgis\src\QGIS-final-3_0_2\src\ui
+                在csxproj文件中批量修改头文件和源文件的路径，在解决方案中添加该工程，把头文件拖到“head files”里，把工程包含目录、依赖库目录、依赖输入项的路径修改为真实路径。编译，出错了则添加相应的头文件依赖
+                细节：1）拷贝cscproj文件时同时拷贝.filters文件，其中包含了工程中目录组织方式。
+                     2）同时将D:\qgis\src\QGIS-final-3_0_2\build2\src\gui及其子目录中的moc_*.cpp文件拷贝到GeneratedFiels目录中，并修改相对路径。
+                     3）将*.ui拷贝到工程目录下的ui文件夹下
+                     4）将D:\qgis\src\QGIS-final-3_0_2\build2\src\ui目录下的ui_*.h文件拷贝到include\ui文件夹
+       qgis_analysis: D:\qgis\src\QGIS-final-3_0_2\src\analysis  D:\qgis\src\QGIS-final-3_0_2\build2\src\analysis\flex_qgsrastercalclexer.cpp & qgsrastercalcparser.cpp
+                在csxproj文件中批量修改头文件和源文件的路径，在解决方案中添加该工程，把头文件拖到“head files”里，把工程包含目录、依赖库目录、依赖输入项的路径修改为真实路径。编译，出错了则添加相应的头文件依赖
+                细节：1）拷贝cscproj文件时同时拷贝.filters文件，其中包含了工程中目录组织方式。
+       qgis_app:
+       libdxfrw:
+       
